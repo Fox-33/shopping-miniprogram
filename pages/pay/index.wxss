@@ -1,0 +1,114 @@
+.addressbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150rpx;
+  border-bottom: 10rpx solid #E9E8E4;
+}
+.addressbox .addressdetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20rpx;
+}
+.addressbox .addressdetail .userinfo {
+  flex: 1;
+  display: flex;
+}
+.addressbox .addressdetail .userinfo .username {
+  flex: 1;
+}
+.addressbox .addressdetail .userinfo .usertel {
+  flex: 1;
+  text-align: right;
+}
+.addressbox .addressdetail .addressinfo {
+  flex: 1;
+}
+.title {
+  color: var(--themeColor);
+  padding: 20rpx 30rpx;
+  font-weight: bolder;
+  border-bottom: 1rpx solid currentColor;
+}
+.goodslist {
+  padding-bottom: 90rpx;
+}
+.goodslist .goodsitem {
+  display: flex;
+  border-bottom: 5rpx solid #E9E8E4;
+  padding: 20rpx 0;
+}
+.goodslist .goodsitem .imgbox {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodslist .goodsitem .imgbox image {
+  width: 80%;
+}
+.goodslist .goodsitem .contentbox {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 20rpx;
+}
+.goodslist .goodsitem .contentbox .goodname {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #6c6c6c;
+}
+.goodslist .goodsitem .contentbox .numbox {
+  display: flex;
+}
+.goodslist .goodsitem .contentbox .numbox .goodprice {
+  flex: 1;
+  color: var(--themeColor);
+}
+.goodslist .goodsitem .contentbox .numbox .goodnum {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  color: #6c6c6c;
+}
+.tabar {
+  position: fixed;
+  bottom: 0;
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+}
+.tabar .totalbox {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+.tabar .totalbox .totalnumber {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+.tabar .totalbox .totalnumber .total {
+  color: var(--themeColor);
+  padding-right: 20rpx;
+  font-weight: bolder;
+}
+.tabar .totalbox .totaltip {
+  color: #6c6c6c;
+  font-size: 30rpx;
+  text-align: right;
+  padding-right: 20rpx;
+}
+.tabar .paybox {
+  flex: 1;
+  color: #ffffff;
+  background-color: #FF0000;
+  text-align: center;
+  line-height: 90rpx;
+}

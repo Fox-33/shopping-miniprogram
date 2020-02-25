@@ -1,0 +1,31 @@
+.goodslist .goodsitem {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 5rpx solid #E9E8E4;
+}
+.goodslist .goodsitem .imgbox {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodslist .goodsitem .imgbox image {
+  width: 60%;
+}
+.goodslist .goodsitem .contentbox {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 10rpx;
+}
+.goodslist .goodsitem .contentbox .goodname {
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goodslist .goodsitem .contentbox .goodprice {
+  color: var(--themeColor);
+}

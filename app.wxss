@@ -1,0 +1,17 @@
+/**app.wxss**/
+@import "./styles/iconfont.wxss";
+
+page, view, text, swiper, swiper-item, image, navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+image {
+  width: 100%;
+}
+
+page {
+  /* 定义主题颜色 */
+  --themeColor: #EB4450;
+}

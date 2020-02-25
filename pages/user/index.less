@@ -1,0 +1,107 @@
+.background {
+    filter:blur(3px);
+    position: absolute;
+    transform: translate(0, -100%);
+    top: 40vh;
+}
+.avatar {
+    width: 20%;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+.userpage {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6c6c6c;
+    .avatar {
+        width: 20%;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+    }
+    .nicknamebox {
+        height: 25vh;
+        color: #ffffff;
+        display: flex;
+        align-items: flex-end;
+    }   
+    .goodinfobox {
+        width: 100%;
+        height: 60vh;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 40vh;
+        padding: 0 20rpx;
+        .mygood {
+            background-color: #ffffff;
+            display: flex;
+            height: 110rpx;
+            transform: translate(0, -50%);
+            .myitem {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: 30rpx;
+                .num {
+                    flex: 1;
+                    text-align: center;
+                    color: var(--themeColor);
+                    line-height: 55rpx;
+                }
+                .title {
+                    flex: 1;
+                    text-align: center;
+                    line-height: 55rpx;
+                }
+            }
+        }
+        .order {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            height: 250rpx;
+            transform: translate(0, -35rpx);
+            .title {
+                flex: 1;
+                border-bottom: 5rpx solid #f4f4f4;
+                // 250rpx / 2.5 = 100rpx
+                line-height: 100rpx;
+                padding-left: 20rpx;
+            }
+            .content {
+                flex: 1.5;
+                display: flex;
+                .orderitem {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .icon {
+                        flex: 2;
+                        text-align: center;
+                        // 250rpx / 2.5 = 100rpx
+                        // 100rpx * 1.5 = 150 rpx
+                        // 150rpx / 3 = 50rpx
+                        line-height: 100rpx;
+                        font-size: 80rpx;
+                        color: var(--themeColor);
+                    }
+                    .ordertitle {
+                        flex: 1;
+                        text-align: center;
+                        font-size: 35rpx;
+                        line-height: 50rpx;
+                    }
+                }
+            }
+        }
+    }
+    
+}

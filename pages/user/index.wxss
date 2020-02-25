@@ -1,0 +1,102 @@
+.background {
+  filter: blur(3px);
+  position: absolute;
+  transform: translate(0, -100%);
+  top: 40vh;
+}
+.avatar {
+  width: 20%;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+.userpage {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6c6c6c;
+}
+.userpage .avatar {
+  width: 20%;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+.userpage .nicknamebox {
+  height: 25vh;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+}
+.userpage .goodinfobox {
+  width: 100%;
+  height: 60vh;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 40vh;
+  padding: 0 20rpx;
+}
+.userpage .goodinfobox .mygood {
+  background-color: #ffffff;
+  display: flex;
+  height: 110rpx;
+  transform: translate(0, -50%);
+}
+.userpage .goodinfobox .mygood .myitem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+.userpage .goodinfobox .mygood .myitem .num {
+  flex: 1;
+  text-align: center;
+  color: var(--themeColor);
+  line-height: 55rpx;
+}
+.userpage .goodinfobox .mygood .myitem .title {
+  flex: 1;
+  text-align: center;
+  line-height: 55rpx;
+}
+.userpage .goodinfobox .order {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 250rpx;
+  transform: translate(0, -35rpx);
+}
+.userpage .goodinfobox .order .title {
+  flex: 1;
+  border-bottom: 5rpx solid #f4f4f4;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+}
+.userpage .goodinfobox .order .content {
+  flex: 1.5;
+  display: flex;
+}
+.userpage .goodinfobox .order .content .orderitem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.userpage .goodinfobox .order .content .orderitem .icon {
+  flex: 2;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 80rpx;
+  color: var(--themeColor);
+}
+.userpage .goodinfobox .order .content .orderitem .ordertitle {
+  flex: 1;
+  text-align: center;
+  font-size: 35rpx;
+  line-height: 50rpx;
+}

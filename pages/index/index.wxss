@@ -1,0 +1,29 @@
+.swiperbox {
+  height: calc(100vw * 328 / 725);
+}
+.cat {
+  display: flex;
+}
+.cat .catitem {
+  flex: 1;
+  padding: 20rpx;
+}
+.floor .flooritem image {
+  width: 100%;
+}
+.floor .flooritem .productitem {
+  padding: 0 10rpx;
+}
+.floor .flooritem .productitem navigator {
+  float: left;
+  width: 33.33%;
+}
+.floor .flooritem .productitem navigator:nth-last-child(-n+4) {
+  height: calc( 33.33vw * 386 / 232 / 2 );
+  padding-bottom: 10rpx;
+  padding-left: 10rpx;
+}
+.floor .flooritem .productitem navigator image {
+  width: 100%;
+  height: 100%;
+}

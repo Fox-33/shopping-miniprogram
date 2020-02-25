@@ -1,0 +1,62 @@
+<!--pages/goods_detail/index.wxml-->
+<view>
+    <swiper indicator-dots autoplay circular class="swiperbox">
+        <swiper-item
+            wx:for="{{goodDetail.pics}}" 
+            wx:key="pics_id" 
+            wx:for-index="idx" 
+            wx:for-item="item"
+            bindtap = "handleTapPic"
+            data-index="{{idx}}">
+            <image mode="widthFix" src="{{item.pics_mid}}"></image>
+        </swiper-item>
+    </swiper>
+    <view class="contentbox">
+        <view class="goodprice">
+            ￥{{goodDetail.goods_price}}
+        </view>
+        <view class="goodcontent">
+            <view class="goodname">
+                {{goodDetail.goods_name}}
+            </view>
+            <view class="goodcollect" 
+                bindtap="handleTapCollect">
+                <text wx:if="{{isCollect}}" class="iconfont icon-star__easyico collect"></text>
+                <text wx:else class="iconfont icon-shoucang"></text>
+                收藏
+            </view>
+        </view>
+    </view>
+    <view class="detailbox">
+        <view class="title">
+            图文详情            
+        </view>
+        <rich-text class="" nodes="{{goodDetail.goods_introduce}}">
+        </rich-text>
+    </view>
+    <view class="tabar">
+        <view class="tabarbtn">
+            <text class="iconfont icon-kefu"></text>
+            联系客服
+            <button open-type="contact"></button>
+        </view>
+        <view class="tabarbtn">
+            <text class="iconfont icon-yixianshi-"></text>
+            分享
+            <button open-type="share"></button>
+        </view>
+        <navigator class="tabarbtn"
+            open-type="switchTab"
+            url="../cart/index">
+            <text class="iconfont icon-gouwuche"></text>
+            购物车
+        </navigator>
+        <view class="addtocart" 
+            bindtap="handleTapCart">
+            加入购物车
+        </view>
+        <view class="buy">
+            立即购买
+        </view>
+    </view>
+</view>

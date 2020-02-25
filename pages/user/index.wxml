@@ -1,0 +1,80 @@
+<!--pages/user/index.wxml-->
+<view>
+    <image class="background" src="{{userInfo.avatarUrl}}" mode="widthFix"/>
+    <view class="userpage">
+        <image class="avatar" src="{{userInfo.avatarUrl}}" mode="widthFix"/>
+        <view class="nicknamebox">
+            <view class="nickname">
+                {{userInfo.nickName}}
+            </view>
+        </view>
+        <view class="goodinfobox">
+            <view class="mygood">
+                <view class="myitem">
+                    <view class="num">
+                        0
+                    </view>
+                    <view class="title">
+                        收藏的店铺
+                    </view>
+                </view>
+                <navigator class="myitem"
+                    url="../collect/index">
+                    <view class="num">
+                        {{collectNum}}
+                    </view>
+                    <view class="title">
+                        收藏的商品
+                    </view>
+                </navigator>
+                <view class="myitem">
+                    <view class="num">
+                        0
+                    </view>
+                    <view class="title">
+                        关注的商品
+                    </view>
+                </view>
+                <view class="myitem">
+                    <view class="num">
+                        0
+                    </view>
+                    <view class="title">
+                        我的足迹
+                    </view>
+                </view>
+            </view>
+            <view class="order">
+                <view class="title">
+                    我的订单
+                </view>
+                <view class="content">
+                    <view class="orderitem">
+                        <text class="iconfont icon-dingdan icon"></text>
+                        <view class="ordertitle">
+                            全部订单
+                        </view>
+                    </view>
+                    <view class="orderitem">
+                        <text class="iconfont icon-daifukuan icon"></text>
+                        <view class="ordertitle">
+                            待付款
+                        </view>
+                    </view>
+                    <view class="orderitem">
+                        <text class="iconfont icon-daishouhuo icon"></text>
+                        <view class="ordertitle">
+                            待收货
+                        </view>
+                    </view>
+                    <view class="orderitem" >
+                        <text class="iconfont icon-tuikuan icon"></text>
+                        <view class="ordertitle">
+                            退款/退货
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

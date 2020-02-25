@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/pay/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EB4450",
+    "navigationBarTitleText": "Fox - 商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/home.png",
+      "selectedIconPath": "icon/home-o.png"
+    },{
+      "pagePath": "pages/category/index",
+      "text": "分类",
+      "iconPath": "icon/category.png",
+      "selectedIconPath": "icon/category-o.png"
+    },{
+      "pagePath": "pages/cart/index",
+      "text": "购物车",
+      "iconPath": "icon/cart.png",
+      "selectedIconPath": "icon/cart-o.png"
+    },{
+      "pagePath": "pages/user/index",
+      "text": "我的",
+      "iconPath": "icon/my.png",
+      "selectedIconPath": "icon/my-o.png"
+    }],
+    "selectedColor": "#EB4450"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view>
+  <searchInput></searchInput>
+  <swiper indicator-dots autoplay circular class="swiperbox">
+    <swiper-item
+       wx:for="{{swiperData}}" 
+       wx:key="goods_id" 
+       wx:for-index="idx" 
+       wx:for-item="item"
+    >
+      <image mode="widthFix" src="{{item.image_src}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="cat">
+    <navigator class="catitem"  
+      wx:for="{{catItems}}" 
+      wx:key="name" 
+      wx:for-index="idx" 
+      wx:for-item="item"
+    >
+      <image src="{{item.image_src}}" mode="widthFix"/>
+    </navigator>
+  </view>
+  <view class="floor">
+    <view class="flooritem"  
+      wx:for="{{floorData}}" 
+      wx:key="name" 
+      wx:for-index="flooridx" 
+      wx:for-item="flooritem">
+      <!-- 标题 —— [图片] -->
+      <image src="{{flooritem.floor_title.image_src}}" mode="widthFix"/>
+      <!-- 产品 -->
+      <view class="productitem">
+        <navigator 
+          wx:for="{{flooritem.product_list}}" 
+          wx:key="name" 
+          wx:for-index="productidx" 
+          wx:for-item="productitem"
+        >
+          <image src="{{productitem.image_src}}" mode="{{productidx==0?'widthFix':'scaleToFill'}}"/>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

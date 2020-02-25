@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "searchInput": "../../components/searchInput/searchInput"
+  },
+  "navigationBarTitleText": "Fox - 商品列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

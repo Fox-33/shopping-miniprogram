@@ -1,0 +1,155 @@
+.addressbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150rpx;
+  border-bottom: 10rpx solid #E9E8E4;
+}
+.addressbox .addressdetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20rpx;
+}
+.addressbox .addressdetail .userinfo {
+  flex: 1;
+  display: flex;
+}
+.addressbox .addressdetail .userinfo .username {
+  flex: 1;
+}
+.addressbox .addressdetail .userinfo .usertel {
+  flex: 1;
+  text-align: right;
+}
+.addressbox .addressdetail .addressinfo {
+  flex: 1;
+}
+.addressbox .getaddressbtn {
+  height: 60%;
+  width: 60%;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #f4f4f4;
+  border: 1rpx solid #E9E8E4;
+  font-size: 50rpx;
+  border-radius: 10rpx;
+}
+.title {
+  color: var(--themeColor);
+  padding: 20rpx 30rpx;
+  font-weight: bolder;
+  border-bottom: 1rpx solid currentColor;
+}
+.goodslist {
+  padding-bottom: 90rpx;
+}
+.goodslist .goodsitem {
+  display: flex;
+  border-bottom: 5rpx solid #E9E8E4;
+}
+.goodslist .goodsitem .radiobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodslist .goodsitem .radiobox radio {
+  transform: scale(0.7);
+}
+.goodslist .goodsitem .goodbox {
+  display: flex;
+  padding: 20rpx 0;
+}
+.goodslist .goodsitem .goodbox .imgbox {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodslist .goodsitem .goodbox .imgbox image {
+  width: 80%;
+}
+.goodslist .goodsitem .goodbox .contentbox {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 20rpx;
+}
+.goodslist .goodsitem .goodbox .contentbox .goodname {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goodslist .goodsitem .goodbox .contentbox .numbox {
+  display: flex;
+}
+.goodslist .goodsitem .goodbox .contentbox .numbox .goodprice {
+  flex: 1;
+  color: var(--themeColor);
+}
+.goodslist .goodsitem .goodbox .contentbox .numbox .goodnum {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.goodslist .goodsitem .goodbox .contentbox .numbox .goodnum .numoption {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #f4f4f4;
+  border: 1rpx solid #E9E8E4;
+  margin: 0 20rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 5rpx;
+}
+.tabar {
+  position: fixed;
+  bottom: 0;
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+}
+.tabar .radiobox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabar .radiobox radio {
+  transform: scale(0.7);
+}
+.tabar .radiobox radio text {
+  font-size: 50rpx;
+}
+.tabar .totalbox {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+.tabar .totalbox .totalnumber {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+.tabar .totalbox .totalnumber .total {
+  color: var(--themeColor);
+  padding-right: 20rpx;
+  font-weight: bolder;
+}
+.tabar .totalbox .totaltip {
+  color: #6c6c6c;
+  font-size: 30rpx;
+  text-align: right;
+  padding-right: 20rpx;
+}
+.tabar .paybox {
+  flex: 1;
+  color: #ffffff;
+  background-color: #FF0000;
+  text-align: center;
+  line-height: 90rpx;
+}

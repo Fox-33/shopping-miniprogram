@@ -1,0 +1,23 @@
+/* components/searchInput/searchInput.wxss */
+@import "../../styles/iconfont.wxss";
+
+.searchBox{
+  height: 90rpx;
+  padding: 10rpx;
+  background-color: var(--themeColor);
+}
+.searchBox navigator {
+  background-color: white;
+  border-radius: 10rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox navigator text {
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+  width: 70rpx;
+  font-size: 50rpx;
+}

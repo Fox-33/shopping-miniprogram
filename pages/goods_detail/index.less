@@ -1,0 +1,90 @@
+.swiperbox {
+    // 轮播图图片size：400 * 400
+    // width / height = 1
+    // width = 100vw
+    height: 100vw;
+}
+
+.contentbox {
+    .goodprice {
+        color: var(--themeColor);
+        padding-left: 30rpx;
+        font-weight: bolder;
+    }
+    .goodcontent {
+        display: flex;
+        .goodname {
+            flex: 4;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            margin: 10rpx 20rpx;
+        }
+        .goodcollect{
+            margin: 10rpx 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-left: 2rpx solid #6C6C6C;
+            font-size: 30rpx;
+            .collect {
+                color: #EFCE4A;
+            }
+        }
+    }
+}
+
+.detailbox {
+    padding-bottom: 90rpx;
+    .title {
+        color: var(--themeColor);
+        padding: 20rpx 30rpx;
+        border-top: 10rpx solid #E9E8E4;
+        font-weight: bolder;
+    }
+}
+
+.tabar {
+    position: fixed;
+    bottom: 0;
+    height: 90rpx;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    .tabarbtn {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        font-size: 25rpx;
+        padding: 10rpx;
+        button {
+            position: absolute;
+            height: 70rpx;
+            width: ~'calc(50vw / 3)';
+            opacity: 0;
+        }
+    }
+    .addtocart {
+        flex: 1.5;
+        color: #ffffff;
+        background-color: #FEA400;
+        font-size: 30rpx;
+        font-weight: bolder;
+        line-height: 90rpx;
+        text-align: center;
+    }
+    .buy {
+        flex: 1.5;
+        color: #ffffff;
+        background-color: var(--themeColor);
+        font-size: 30rpx;
+        font-weight: bolder;
+        line-height: 90rpx;
+        text-align: center;
+    }
+}

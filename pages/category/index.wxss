@@ -1,0 +1,58 @@
+.category {
+  display: flex;
+}
+.category .leftmenu {
+  flex: 2;
+  background-color: #F4F4F4;
+  height: calc(100vh - 90rpx);
+}
+.category .leftmenu .menuitem {
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #E9E8E4;
+}
+.category .leftmenu .menuitem .menuitemcontent {
+  text-align: center;
+}
+.category .leftmenu .menuitem .active {
+  border-left: 10rpx solid currentColor;
+}
+.category .leftmenu .active {
+  color: var(--themeColor);
+  background-color: #FFFFFF;
+}
+.category .rightcontent {
+  flex: 5;
+  height: calc(100vh - 90rpx);
+}
+.category .rightcontent .contentitem {
+  display: flex;
+  flex-direction: column;
+}
+.category .rightcontent .contentitem .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category .rightcontent .contentitem .title text {
+  padding: 0 30rpx;
+  color: #E9E8E4;
+}
+.category .rightcontent .contentitem .contentbox {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50rpx;
+}
+.category .rightcontent .contentitem .contentbox .content {
+  float: left;
+  width: 33.33%;
+  height: 33.33vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+.category .rightcontent .contentitem .contentbox .content image {
+  width: 70%;
+  height: 70%;
+}

@@ -1,0 +1,24 @@
+<!--pages/goods_list/index.wxml-->
+<view>
+    <searchInput></searchInput>
+    <view class="goodslist">
+        <navigator class="goodsitem"  
+            wx:for="{{goodsList}}" 
+            wx:key="goods_id" 
+            wx:for-index="idx" 
+            wx:for-item="item"
+            url="../goods_detail/index?goodsid={{item.goods_id}}">
+            <view class="imgbox">
+                <image src="{{item.goods_small_logo?item.goods_small_logo:'../../icon/nopic.jpg'}}" mode="widthFix"/>
+            </view>
+            <view class="contentbox">
+                <view class="goodname">
+                    {{item.goods_name}}
+                </view>
+                <view class="goodprice">
+                    ￥{{item.goods_price}}
+                </view>
+            </view>    
+        </navigator>  
+    </view>
+</view>

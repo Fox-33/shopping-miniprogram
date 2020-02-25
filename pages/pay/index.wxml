@@ -1,0 +1,65 @@
+<!--pages/pay/index.wxml-->
+<view>
+    <view class="addressbox">
+        <view class="addressdetail">
+            <view class="userinfo">
+                <view class="username">
+                    收货人: {{addressInfo.userName}}
+                </view>
+                <view class="usertel">
+                    {{addressInfo.telNumber}}
+                </view>
+            </view>
+            <view class="addressinfo">
+                {{addressInfo.address}}
+            </view>
+        </view>
+    </view>
+    <view class="title">
+        购物车
+    </view>
+    <view class="goodslist">
+        <view class="goodsitem"
+            wx:for="{{goods}}" 
+            wx:key="goods_id" 
+            wx:for-index="idx" 
+            wx:for-item="item">            
+            <navigator class="imgbox"
+                url="../goods_detail/index?goodsid={{item.goods_id}}">
+                <image src="{{item.goods_small_logo?item.goods_small_logo:'../../icon/nopic.jpg'}}" mode="widthFix"/>
+            </navigator>
+            <view class="contentbox">
+                <view class="goodname">
+                    {{item.goods_name}}
+                </view>
+                <view class="numbox">
+                    <view class="goodprice">
+                        ￥{{item.goods_price}}
+                    </view>
+                    <view class="goodnum">
+                        ×{{item.num}}
+                    </view>
+                </view>
+            </view>    
+        </view>
+    </view>
+    <view class="tabar">
+        <view class="totalbox">
+            <view class="totalnumber">
+                <view class="total">
+                    ￥{{totalPrice}}
+                </view>
+                <view class="totaltext">
+                    合计:
+                </view>
+            </view>       
+            <view class="totaltip">
+                包含运费
+            </view>
+        </view>
+        <view class="paybox"
+            bindtap="handlePayTap">
+            支付({{totalNum}})
+        </view>
+    </view>  
+</view>

@@ -1,0 +1,22 @@
+<!--pages/search/index.wxml-->
+<view class="searchpage">
+    <view class="searchbox">
+        <input bindinput="handleInput" auto-focus placeholder="请输入关键词" placeholder-class="center"/>  
+        <view class="cancelbtn">
+            取消            
+        </view>
+    </view>
+    <view class="searchresult">
+        <navigator class="resultitem"  
+            wx:for="{{searchResult}}" 
+            wx:key="goods_id" 
+            wx:for-index="idx" 
+            wx:for-item="item"
+            url="../goods_detail/index?goodsid={{item.goods_id}}">
+            <view class="content">
+                {{item.goods_name}}
+            </view>
+        </navigator>
+    </view>
+</view>
+  
